@@ -1,6 +1,5 @@
 call pathogen#infect()
 
-# settings
 set nocompatible
 set number
 set tabstop=2
