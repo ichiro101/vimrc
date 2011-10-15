@@ -11,5 +11,6 @@ set tw=100
 set guifont=Inconsolata\ 12
 
 filetype plugin indent on 
+filetype plugin on
 syntax on
 colorscheme darkspectrum
