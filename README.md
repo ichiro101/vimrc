@@ -7,7 +7,7 @@ To use this, you will need to clone this to your .vim folder by
 
 You will then need to get all the submodules. In your .vim folder, do
 
-	git submodule update .
+	git submodule update --init
 
 In your .vimrc file, simply add
 
