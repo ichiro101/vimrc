@@ -19,6 +19,6 @@
 [submodule "bundle/vim-rake"]
 	path = bundle/vim-rake
 	url = https://github.com/tpope/vim-rake.git
-[submodule "bundle/csapprox"]
-	path = bundle/csapprox
-	url = https://github.com/godlygeek/csapprox.git
+[submodule "bundle/vim-csexact"]
+	path = bundle/vim-csexact
+	url = https://github.com/KevinGoodsell/vim-csexact.git
