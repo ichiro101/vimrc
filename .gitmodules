@@ -22,3 +22,6 @@
 [submodule "bundle/vim-csexact"]
 	path = bundle/vim-csexact
 	url = https://github.com/KevinGoodsell/vim-csexact.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git
