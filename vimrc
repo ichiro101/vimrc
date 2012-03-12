@@ -14,4 +14,4 @@ set t_Co=256
 filetype plugin indent on 
 filetype plugin on
 syntax on
-colorscheme vividchalk
+colorscheme oceanblack
