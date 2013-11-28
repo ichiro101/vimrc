@@ -8,13 +8,31 @@ set softtabstop=2
 set cindent
 set completefunc=1
 set tw=100
-set guifont=Inconsolata\ 22
-set t_Co=256
+" use 256 colors in Console mode if we think the terminal supports it 
+if &term =~? 'mlterm\|xterm' 
+	set t_Co=256 
+endif
+set guifont=Inconsolata\ 18
 
 filetype plugin indent on 
 filetype plugin on
 syntax on
-colorscheme darkspectrum
+
+" IMPORTANT: Uncomment one of the following lines to force
+" using 256 colors (or 88 colors) if your terminal supports it,
+" but does not automatically use 256 colors by default.
+"set t_Co=256
+"set t_Co=88
+if (&t_Co == 256 || &t_Co == 88) && !has('gui_running')
+  " Use the guicolorscheme plugin to makes 256-color or 88-color
+  " terminal use GUI colors rather than cterm colors.
+  runtime! plugin/guicolorscheme.vim
+	GuiColorScheme darkspectrum
+else
+  " For 8-color 16-color terminals or for gvim, just use the
+  " regular :colorscheme command.
+	colorscheme darkspectrum
+endif
 
 "" FuzzyFinder.vim
 nnoremap <Space>f f
