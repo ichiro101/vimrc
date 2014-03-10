@@ -1,14 +1,15 @@
+call pathogen#infect()
+
+set nocompatible
+set number
+
 " use soft tabs
 set expandtab
 set autoindent
 set softtabstop=2
 set shiftwidth=2
 set tabstop=2
-
-call pathogen#infect()
-
-set nocompatible
-set number
+set backspace=2
 
 
 
