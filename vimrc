@@ -1,11 +1,17 @@
+" use soft tabs
+set expandtab
+set autoindent
+set softtabstop=2
+set shiftwidth=2
+set tabstop=2
+
 call pathogen#infect()
 
 set nocompatible
 set number
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set cindent
+
+
+
 set completefunc=1
 set tw=100
 " use 256 colors in Console mode if we think the terminal supports it 
@@ -46,3 +52,5 @@ nnoremap <silent> tb :<C-u>tabnew<CR>:tabmove<CR>:FufBuffer!<CR>
 nnoremap <silent> tf :<C-u>tabnew<CR>:tabmove<CR>:FufFile! <C-r>=expand('#:~:.')[:-1-len(expand('#:~:.:t'))]<CR><CR>
 nnoremap <silent> ,tf :<C-u>tabnew<CR>:tabmove<CR>:FufFile! <CR>
 nnoremap <silent> tm :<C-u>tabnew<CR>:tabmove<CR>:FufMruFile!<CR> 
+
+
