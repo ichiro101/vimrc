@@ -15,6 +15,7 @@ In your .vimrc file, simply add
 
 
 On Windows Systems you may need to add
+
   set runtimepath+=C:\Users\Some User\.vim
 
   set iminsert=0
