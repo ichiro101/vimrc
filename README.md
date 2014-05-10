@@ -15,12 +15,11 @@ In your .vimrc file, simply add
 
 
 On Windows Systems you may need to add
-  " this is needed to work with vimfiles folder that resides
-  " outside of the default vim installation folder in Windows
   set runtimepath+=C:\Users\Some User\.vim
 
-  " don't go into IME by default
   set iminsert=0
   set imsearch=0
 
-as well your _vimrc file
+as well your _vimrc file. This is needed to work with vimfiles folder that resides outside of the
+default vim installation folder in Windows. As well we don't want to go into IME mode by default
+whenever we go into insert mode.
