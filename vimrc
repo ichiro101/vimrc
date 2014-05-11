@@ -19,7 +19,7 @@ set tw=100
 if &term =~? 'mlterm\|xterm' 
 	set t_Co=256 
 endif
-set guifont=Inconsolata\ 18
+set guifont=Consolas:h12
 
 filetype plugin indent on 
 filetype plugin on
