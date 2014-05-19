@@ -11,6 +11,10 @@ set shiftwidth=2
 set tabstop=2
 set backspace=2
 
+" encoding and languages
+set enc=utf-8
+set fileencoding=utf-8
+set fileencodings=ucs-bom,utf8,prc
 set langmenu=en_US.UTF-8 
 let $LANG = 'en_US'
 
@@ -21,7 +25,7 @@ set tw=100
 if &term =~? 'mlterm\|xterm' 
 	set t_Co=256 
 endif
-set guifont=Consolas:h14
+set guifont=Inconsolata:h16
 
 filetype plugin indent on 
 filetype plugin on
